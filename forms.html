@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+     /* /* form {
+  display: inline;
+  flex-direction: column;
+  max-width: 400px; 
+} */
+
+
+label{
+    color: rgb(32, 32, 32);
+}
+label:hover{
+    color: rgb(255, 255, 255);
+}
+textarea{
+    resize: none;
+} 
+.checkbox{
+   margin: 14px;
+}
+body{
+    background-color: whitesmoke;
+}
+
+input{
+
+    margin: 13px;
+background-color: black;
+color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border-radius: 5px;
+
+border: 4px solid black;
+}
+
+input[type=submit] ,input[type=reset]{
+ cursor: pointer;
+    
+}
+fieldset{
+    background-image: linear-gradient(to right,rgb(22, 18, 255),rgb(14, 187, 255));
+}
+fieldset{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 45px;
+    transform: translate(-50%, -50%);
+ height: 95%;
+ width: 65%;
+   
+}
+
+
+    </style>
+     
+</head>
+<body><form action="/congrats.html">
+    <fieldset>
+        <legend>INTERVIEW FORM</legend>
+    <table>
+        <tr>
+            <td><label for="sabeeb">NAME:</label></td>
+            <td><input required type="text" name="sabeeb" id="sabeeb"></td>
+           </tr>
+           <tr>
+            <td><label for="name">PREVIOUS EXPERIENCE:</label></td>
+            <td><input type="number" name="sad" id="name"></td></tr>
+            
+        <tr>
+            <td><label for="num"> PHONE NUMBER:</label> </td>
+            <td><input type="tel" name="" id="num"></td>
+        </tr>
+        <tr>
+            <td><label for="mail" >EMAIL:</label> </td>
+            <td><input required type="email" name="sad" id="mail"></td>
+        </tr>
+        <tr>
+            <td><label for="mail">GENDER:</label> </td>
+            <td><input type="radio" name="sad" id="male"><label for="male">MALE</label>
+           <input type="radio" name="sad" id="female"><label for="female">FEMALE</label></td>
+           
+        
+        </tr>
+        <tr>
+            
+            <td><label for="address">ADDRESS:</label> </td>
+            <td><input type="text" name="sad" id="address" placeholder="city:-  street:- road:-"></td>
+        </tr>
+        <tr>
+            
+            <td><label for="QUALIFICATIONS">QUALIFICATIONS</label> </td>
+            <td><select name="" id="QUALIFICATIONS" >
+                <option value="OLEVELS">OLEVELS</option>
+                <option value="INTER">INTER</option>
+                <option value="INTER">ALEVELS</option>
+                <option value="INTER">GRADUATION</option>
+
+            </select></td>
+            
+        </tr>
+        <tr>
+            
+            <td><label for="address">SPECIALZATION</label> </td>
+           <td> <label for="ANA">DATA ANALYST</label><input type="checkbox" name="sad" id="ANA" class="checkbox" >
+            <label for="ENG">DATE ENGINEER</label><input type="checkbox" name="sad" id="ENG"class="checkbox" > 
+            <label for="SCI">DATA SCEINTIST</label><input type="checkbox" name="sad" id="SCI" class="checkbox"></td>
+ 
+    </tr>
+
+        <tr>
+            <td><label for="be">WHY DO YOU WANT TO JOIN US</label></td>
+            <td><textarea name="" id="be" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="" id=""><input type="reset" name="" id=""></td>
+            <td></td>
+        </tr>
+    </table>
+    
+     </fieldset>
+        
+      
+        
+    </form>
+</body>
+</html>
