@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "poppins-medium";
+    src: url('fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url('fonts/Poppins/Poppins-Bold.ttf');
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 640px;
+    font-family: poppins-medium;
+    padding: 0px;
+    margin: 0px;
+    background-color: #1c1c1c;
+}
+.navbar{
+  
+    /* width:80rem; */
+    height: 60px;
+    display: flex;
+}
+.avatar{
+    display: flex;
+    flex-grow: 0.5 ;
+    /* background-color: aqua; */
+}
+.avatar img{
+ padding-left: 13px;   
+}
+.headpages{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-grow: 2.5;
+    /* background-color: pink; */
+}
+.headpages button{
+position: relative;
+
+
+}
+.headpages ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 36px;
+    
+    
+}
+.headpages ul li a{
+    text-decoration: none;
+    color: white;
+ padding-right: 25px;
+ padding-top: 6px;
+  
+}
+.headpages ul li a:hover{
+color: #72B8F9;
+}
+.button{
+    margin-right: 12px;
+    padding: 6px;
+    align-self:center ;
+    width: 120px;
+    background-color: #72B8F9;
+    border:2px solid #72B8F9;
+   border-radius: 3px;
+   font-family: poppins-medium;
+   cursor: pointer;
+   /* height: 20px; */
+
+}
+.button:hover, .intro-button:hover{
+    background-color: transparent;
+    color: white;
+    border:2px solid  white;
+}
+.intro{
+    height: 90%;
+
+    display: flex;
+align-items: center;
+/* margin-top: 55px; */
+justify-content: space-around;
+align-items: center;
+}
+.intro-text{
+    /* flex-wrap: wrap; */
+    font-size: 19px;
+    display: flex;
+    
+    margin: 50px 70px;
+    flex-direction: column;
+    width:700px;
+    height: 61%;
+    font-family: poppins-medium;
+    /* border:2px solid white; */
+    gap: 20px;
+    /* flex-grow: 2; */
+color: white;
+    justify-content: center;
+
+    
+}
+.intro-text h1{
+    word-spacing: 3px;
+    font-family: poppins-bold;
+}
+
+.work-desc{
+    color: #72edf9;
+}
+.intro-img{
+    /* margin-right: 32px; */
+width: 700px;
+    display: flex;
+    
+    align-items: center;
+    justify-content:center;
+    
+}
+.intro-button{
+    margin-right: 12px;
+    padding: 6px;
+    width: 120px;
+    background-color: #72B8F9;
+    border:2px solid #72B8F9;
+   border-radius: 3px;
+   font-family: poppins-medium;
+   cursor: pointer;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    width: 150px;
+}
+.intro-img img{
+    width: 61%;
+ 
+}
+
+
+/*  ------------   second page styling --------------- */
+.sec2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* margin: 154px 0px; */
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 653px;
+
+}
+.services{
+    
+    border: none;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-family: poppins-medium;
+ height: 400px;
+font-size: 20px;
+color: rgb(0, 0, 0);    
+    /* background-color: rgb(255, 255, 255); */
+    
+  
+   
+width: 20%;
+/* background-color: black; */
+border-radius: 11px;
+transition: transform .2s ease;
+}
+.services:hover{
+  border: rgba(32, 32, 32, 0.274);
+
+color: rgb(255, 255, 255);    
+
+
+    /* background-color: rgba(32, 32, 32, 0.274); */
+
+    transform: scale(0.8);
+    cursor: pointer;  
+    box-shadow: 0px 0px 25px white;
+    filter: drop-shadow(1px 4px 6px rgb(0, 0, 0))
+}
+.services img{
+    width: 100px;
+}
+.services-button{
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    display: none;
+    width: 180px;
+   
+}
+.services:hover .services-button{
+    display: block;
+}
+/* 
+.services:hover img{
+    display: none;
+
+} */
+/* .services:hover{
+    
+background-image: url('sabeeb_avt.png');
+   
+    background-repeat: no-repeat;
+   
+    background-size: 125px;
+     background-position: 75px 55px;
+} */
+.services:nth-child(1):hover::before{
+    
+content: "backend";
+font-size: 35;
+
+}
+.services:hover::before{
+    
+   
+    font-size: 35;
+    position: relative;
+    bottom: 60px;
+    }
+.services:nth-child(1):hover::before{
+     content: "Frontend Devlopment";
+}
+.services:nth-child(2):hover::before{
+    content: "Backend Devlopment";
+}.services:nth-child(3):hover::before{
+    content: "App Development";
+}.services:nth-child(4):hover::before{
+    content: "Data Analysis";
+}
+
+
+
+/* -------ABOUT PAGE STYLING-------------- */
+.container{
+    width: 95%;
+    height:75% ;
+    margin: 50px;
+}
+.summary-image{
+    display: flex;
+    
+  
+}
+.img-container{
+    width: 370px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    border-radius: 30px;
+    margin-top: 100px;
+    /* margin-left: 100px; */
+    height: 270px;
+    /* position: relative;
+    top: 120px;
+    left: 100px; */
+
+}
+.img-container  img{
+   max-width: 100%; 
+   /* width: 50%; */
+   height: auto;
+   border-radius: 30px;
+   
+   
+}
+
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    /* margin-top: 100px;
+    margin-left: 103px; */
+}
+
+.summary-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:115px 60px 30px 30px;
+    border-radius: 30px;
+    width: 65%;
+    background-color: whitesmoke;
+    /* position: relative;
+    top:120px; */
+    /* margin-left: 100px; */
+}
+.summary-text img{
+    width: 80px;
+    position: absolute;
+    left: 530px;
+    top: 188px;
+    
+
+}
+.summary-text img:hover{
+    
+}
+.summary-heading{
+    color: whitesmoke;
+    font-size: 79px;
+    letter-spacing: 3px;
+    padding: 10px
+}
+
+.expereince{
+    /* width: 50%; */
+    /* background-color: whitesmoke;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 30px;
+    padding:15px 60px 30px 30px; */
+
+padding: 85px 60px 30px 30px;
+
+}
+.expereince ul{   
+   
+    list-style: none;
+    
+
+}
+.expereince ul li{ 
+margin-top: 20px;
+}
+.expereince ul li p ,.expereince ul li h2{
+    margin-bottom: 5px; 
+
+}
+.expereince-education{
+    display: flex;
+    width: 100%;
+gap: 18px;
+justify-content: space-around;
+padding: 10px;
+}
